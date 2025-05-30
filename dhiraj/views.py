@@ -5,3 +5,27 @@ def hp(request):
 from django.http import HttpResponse
 def aboutme(request):
     return HttpResponse("welcome to django view")
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
+
+def loginUser(request):
+    username = "dhiraj"
+    password = "Kumar@2004"
+    userLoggedIn = ""
+
+    if request.method == "GET":
+        try:
+            username1 = request.GET('username')
+            password1 = request.GET('password')
+
+            if (username == username1 and password == password1):
+                return redirect('/loggedIn')
+            else:
+                userLoggedIn = "Invalid username or password"
+        except Exception as e:
+            userLoggedIn = f"Error: {str(e)}"
+
+    return render(request, "login_user.html", {"isUserLoggedIn": userLoggedIn})
+
+def loggedInUser(request):
+    return render(request, "landing_page.html")

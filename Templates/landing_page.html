@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #4caf50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .hero button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #ff9800;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .features .feature-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Landing Page</h1>
+    <nav>
+      <a href="login_user.html">Login</a>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Our Website</h1>
+    <p>Discover the best solutions to grow your business efficiently and effectively.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="features">
+    <h2>Our Features</h2>
+    <div class="feature-boxes">
+      <div class="feature">
+        <h3>Fast</h3>
+        <p>Lightning fast performance with top-notch technology.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure</h3>
+        <p>Built with security as the top priority to protect your data.</p>
+      </div>
+      <div class="feature">
+        <h3>Easy to Use</h3>
+        <p>Intuitive interface that anyone can navigate with ease.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Landing Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

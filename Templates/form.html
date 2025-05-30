@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Simple Form</title>
+</head>
+<body>
+  <h2>Simple Form with Two Inputs and One Output</h2>
+  <form method="post">
+    {% csrf_token %}
+
+    <label for="input1">Input 1:</label>
+    <input type="number" id="input1" name="input1">
+
+    <label for="input2">Input 2:</label>
+    <input type="number" id="input2" name="input2">
+
+    <label for="Result"></label>
+    <input type="text" value={{Output}}>
+
+    <button type="Submit" >SAVE </button>
+
+   
+  </form>
+</body>
+</html>
