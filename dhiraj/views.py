@@ -18,10 +18,12 @@ def loginUser(request):
             username1 = request.GET('username')
             password1 = request.GET('password')
 
-            if (username == username1 and password == password1):
+            if (username == username1) and (password == password1):
+                userLoggedIn="successfully login"
                 return redirect('/loggedIn')
             else:
                 userLoggedIn = "Invalid username or password"
+                print(userLoggedIn)
         except Exception as e:
             userLoggedIn = f"Error: {str(e)}"
 
