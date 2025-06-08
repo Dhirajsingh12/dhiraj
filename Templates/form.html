@@ -3,11 +3,11 @@
 <head>
    <title>Simple Form</title>
 </head>
+<form method="get">
+  {% csrf_token %}
 <body>
   <h2>Simple Form with Two Inputs and One Output</h2>
-  <form method="get">
-    {% csrf_token %}
-
+<h2>enter your name</h2>
     <label for="input1">Input 1:</label>
     <input type="number" id="input1" name="input1">
 
