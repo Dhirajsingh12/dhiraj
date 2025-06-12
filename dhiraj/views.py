@@ -1,3 +1,4 @@
+from service.models import service
 from django.shortcuts import render
 def hp(request):
     data={'title':'newtitle django','number':[12,45,3,5,24,24]}
@@ -31,3 +32,13 @@ def loginUser(request):
 
 def loggedInUser(request):
     return render(request, "landing_page.html")
+def load(request):
+    serviceData = service.objects.all()
+    '''
+    for a in serviceData:
+        print(a.service_ID)
+        print(a.service_Title)
+        print(a.service_Desc)
+    print(service1)
+    '''
+    return render(request, 'load.html', {'service': serviceData})

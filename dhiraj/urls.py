@@ -23,4 +23,5 @@ urlpatterns = [
     path('aboutme/',views.aboutme),
     path('login/',views.loginUser),
     path('loggedIn/',views.loggedInUser),
+    path('show/',views.load),
 ]
